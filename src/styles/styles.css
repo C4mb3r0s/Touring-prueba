@@ -1,0 +1,293 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c7d2de;
+}
+
+.header {
+  background-color: #c7d2de;
+  color: #fff;
+  padding: 15px;
+  height: 40px;
+}
+
+.header nav {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos dentro del nav */
+}
+
+.header nav img {
+  width: 50px;
+  height: 50px;
+  margin: -5px 10px 0px 0px;
+}
+
+.header nav span {
+  margin-right: auto; /* Empuja el span hacia la izquierda */
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #102a47;
+}
+
+.header nav ul {
+  list-style-type: none; /* Quita los estilos de lista */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header nav ul a {
+  text-decoration: none;
+  color: #102a47;
+  margin-right: 10px; /* Espacio entre elementos de lista */
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.header nav ul a:hover {
+  color: #469a85;
+}
+
+.header nav ul li {
+  text-decoration: none;
+  color: #102a47;
+}
+
+.header nav ul li:hover {
+  color: #469a85;
+}
+
+.header nav ul a li {
+  margin-right: 10px; /* Espacio entre elementos de lista */
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.header nav .bye{
+  background-color: #102a47;
+  color: #fff;
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0px;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.header nav .bye:hover {
+  color: #102a47;
+  background-color: #469a85;
+}
+
+.hero {
+  background-color: #102a47;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 1.9rem;
+  color: #17b19f;
+}
+
+.hero button {
+  width: 200px;
+  height: 45px;
+  border: 1px solid #222;
+  border-radius: 49px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #17b19e;
+  color: #fff;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.hero button:hover {
+  color: #102a47;
+  background-color: #fff;
+}
+
+.features {
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.features .feature {
+  background-color: #102a47;
+  padding: 20px;
+  margin: 20px 0;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #222;
+}
+
+.additional-content {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.additional-content .box {
+  border: 2px solid #000000;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #102a47;
+}
+
+.additional-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.additional-content .box h2 {
+  color: #00ffe1;
+}
+
+.additional-content .box p {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.additional-content .box p label {
+  font-weight: 700;
+}
+
+.footer {
+  padding: 20px;
+  margin: 40px 0;
+  background-color: #102a47;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+.footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer nav ul li {
+  margin: 0 10px;
+}
+
+/* ------ Login ------ */
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0; /* Cambia el color de fondo si es necesario */
+}
+
+.login .form-login {
+  background-color: #102a47;
+  height: 400px;
+  width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .form-login h2 {
+  color: #17b19f;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 20px; /* Añade margen inferior para separar del resto del contenido */
+  margin-top: -20px;
+}
+
+.login .form-login .row {
+  margin-bottom: 20px; /* Ajusta el margen inferior de las filas */
+}
+
+.login .form-login .row input {
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000000;
+  width: 250px;
+  height: 30px;
+  border-radius: 20px;
+  padding: 10px; /* Añade relleno para mejorar el espacio alrededor del texto */
+}
+
+.login .form-login button{
+  width: 200px;
+  height: 45px;
+  border: 1px solid #222;
+  border-radius: 49px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #17b19e;
+  color: #fff;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.login .form-login button:hover {
+  color: #102a47;
+  background-color: #8ed0f7 ;
+}
+
+/* Tabla del protected */
+.container-content {
+  background-color: #102a47;
+  padding: 15px;
+  text-align: center; /* Alineación del texto central */
+  width: auto;
+  height: auto;
+ 
+}
+
+.container-content h2 {
+  color: #17b19f;
+  margin-bottom: 20px; /* Espacio inferior para separar el h2 del contenido de la tabla */
+}
+.container-content .container{
+  width: auto;
+}
+
+.container-content .container table {
+  margin: 0 auto; /* Centrar la tabla horizontalmente dentro de container-content */
+  background-color: #fff;
+  text-align: left;
+  border-collapse:collapse;
+  border:#000;
+  width: 100%;
+  max-width: auto;
+  height: 100%;
+}
+
+.container-content th,
+.container-content td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.container-content th {
+  background-color: #f2f2f2;
+  color: #333;
+}
